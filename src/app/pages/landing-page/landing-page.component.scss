@@ -58,7 +58,7 @@
 
 
 .content-section {
-    margin-top: 8vh;
+    // margin-top: 8vh;
     height: 100vh;
 
     section {
@@ -71,9 +71,45 @@
     }
 
     .bienvenida {
-        // background-image: url("../../../assets/PNG/BG_web.png");
-        // background-size: 100% 100vh;
-        background-color: var(--color-info);
+        background-image: url("../../../assets/PNG/BG_web.png");
+        background-size: 100% 100vh;
+        // background-color: var(--color-info);
+        position: relative;
+        overflow: hidden;
+        .content-info{
+            position: absolute;
+            margin-top: 15vh;
+            height: 70vh;
+            width: 100%;
+            top: 0px;            
+            left: 0px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            .info-empresa{
+                .logoempresa{
+                    width: 350px;
+                }
+            }
+            .eslogan{
+                .img-eslogan{
+                    width: 350px
+                }
+            }
+            .next-btn{
+                .conocemas{
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 56px;
+                }
+            }
+        }
+        .img-fondo{
+            height: 100vh;
+            width: 100%;
+            transform: scale(1.3);
+
+        }
     }
 
     .porque {
