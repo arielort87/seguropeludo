@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+:root {
+    --color-info: #1ed6ea;
+    --color-primary: #008BD4;
+    --color-seconday: #F8C846;
+    --color-light: #fff;
+    
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.btn {
+    border-radius: 100px;
+    align-items: center;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.8;
+}
+
+
+.btn:active {
+    opacity: 0.8;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.btn-secondary {
+    background-color: var(--color-seconday);
+    color: #123446;
+}
+
+.btnin-primary {
+    background-color: var(--color-light);
+    border: solid 1px var(--color-primary);
+    color: var(--color-primary);
+}
