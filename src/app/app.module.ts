@@ -12,6 +12,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component'
+import { NgzModule } from './ngz/ngz.module';
+import { BienvenidosComponent } from './pages/landing-page/section/bienvenidos/bienvenidos.component';
+import { PorqueComponent } from './pages/landing-page/section/porque/porque.component';
+import { ClubComponent } from './pages/landing-page/section/club/club.component';
+import { PlanesComponent } from './pages/landing-page/section/planes/planes.component';
 //scroll
 
 registerLocaleData(en);
@@ -19,15 +24,20 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    BienvenidosComponent,
+    PorqueComponent,
+    ClubComponent,
+    PlanesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgxPageScrollCoreModule.forRoot({duration: 500}),
-    AppRoutingModule
+    NgxPageScrollCoreModule.forRoot({ duration: 500 }),
+    AppRoutingModule,
+    NgzModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
