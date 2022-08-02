@@ -1,49 +1,3 @@
-<!-- <section class="porque">
-    <div class="content-info">
-        <div class="titulo">
-            <h1>¿Por Qué</h1>
-            <h2>Seguro Peludo?</h2>
-        </div>
-        <div nz-row class="contentImg" [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
-            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="8" nzXl="8">
-                <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginfo">
-                <div class="textimg">
-                    <p>Atención</p>
-                    <p>Veterinaria</p>
-                </div>
-            </div>
-            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="8" nzXl="8">
-                <img src="../../../../../assets/JPG/perro-bañera.jpg" class="imginfo">
-                <div class="textimg">
-                    <p>Servicios de</p>
-                    <p>Guardería</p>
-                </div>
-            </div>
-            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="8" nzXl="8">
-                <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginfo">
-                <div class="textimg">
-                    <p>Servicios</p>
-                    <p>Funerarios</p>
-                </div>
-            </div>
-        </div>
-        <div class="text-info">
-            <P>Estar preparado es la mejor opción para proteger la vida de</P>
-            <P>aquellos peluditos a los que tanto amamos.</P>
-        </div>
-        <div class="btns-info">
-
-            <button class="btn btn-secondary conocemas">
-                VEAMOS LOS PLANES
-            </button>
-
-            <button class="btn btn-info conocemas">
-                VER EBOOK
-            </button>
-        </div>
-    </div>
-</section> -->
-
 <section class="porque">
     <div class="content-info">
         <div class="titulo">
@@ -61,17 +15,30 @@
             <div class="imginfo">
                 <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginto">
                 <div class="textimg">
-                    <p>Atención</p>
-                    <p>Veterinaria</p>
+                    <p>Servicios de</p>
+                    <p>Guardería</p>
                 </div>
             </div>
             <div class="imginfo">
                 <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginto">
                 <div class="textimg">
-                    <p>Atención</p>
-                    <p>Veterinaria</p>
+                    <p>Servicios</p>
+                    <p>Funerarios</p>
                 </div>
             </div>
+        </div>
+        <div class="text-info">
+            <P>Estar preparado es la mejor opción para proteger la vida de</P>
+            <P>aquellos peluditos a los que tanto amamos.</P>
+        </div>
+        <div class="btns-info">
+            <button class="btn btn-secondary conocemas" (click)="serGlobal.scroll('.planes')">
+                VEAMOS LOS PLANES
+            </button>
+
+            <button class="btn btn-info conocemas">
+                VER EBOOK
+            </button>
         </div>
     </div>
 </section>

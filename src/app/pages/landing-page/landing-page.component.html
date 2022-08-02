@@ -1,27 +1,33 @@
 <div class="header">
+    <div class="menu">
+        <i nz-icon nzType="menu" nzTheme="outline"></i>
+    </div>
     <div class="logo" (click)="scroll('.bienvenida')">
         <img src="../../../assets/LOGOS/logoseguromundial.png">
     </div>
-    <ul class="options">
-        <li>
-            <a (click)="scroll('.porque')">¿Por Que?</a>
-        </li>
-        <li>
-            <a (click)="scroll('.nuestrosplanes')">Nuestros Planes</a>
-        </li>
-        <li>
-            <a (click)="scroll('.quieresinfo')">¿Quieres más info?</a>
-        </li>
-        <li>
-            <a (click)="scroll('.club')">Club</a>
-        </li>
-        <li>
-            <a (click)="scroll('.blog')">Blog</a>
-        </li>
-    </ul>
+    <div class="content-options">
+        <ul class="options">
+            <li>
+                <a (click)="scroll('.porque')">¿Por Que?</a>
+            </li>
+            <li>
+                <a (click)="scroll('.planes')">Nuestros Planes</a>
+            </li>
+            <li>
+                <a (click)="scroll('.quieresinfo')">¿Quieres más info?</a>
+            </li>
+            <li>
+                <a (click)="scroll('.club')">Club</a>
+            </li>
+            <li>
+                <a (click)="scroll('.blog')">Blog</a>
+            </li>
+        </ul>
+    </div>
     <div class="cont-buttons">
-        <button class="btn btnin-primary">Contáctanos</button>
-        <button class="btn btn-secondary" (click)="scroll('.comprar')">¡COMPRA TU SEGURO!</button>
+        <button class="btn btnin-primary" style="font-size: 12px;" id="contactanos">Contáctanos</button>
+        <button class="btn btn-secondary" style="font-size: 12px;" (click)="scroll('.comprar')">¡COMPRA TU
+            SEGURO!</button>
     </div>
 </div>
 <div class="content-section">
@@ -29,46 +35,7 @@
     <app-porque></app-porque>
     <app-planes></app-planes>
     <app-club></app-club>
-    <section class="comprar">
-        <div class="floating-label" style="margin-top: 20px">
-            <input type="text" class="floating-input" placeholder=" ">
-            <label>Label</label>
-        </div>
-        <br>
-        <br>
-        <div class="floating-label">
-            <select class="floating-select" style="padding-right: 15px;">
-                <option value="1">Audi</option>
-                <option value="2">BMW</option>
-                <option value="3">Citroen</option>
-                <option value="4">Ford</option>
-                <option value="5">Honda</option>
-                <option value="6">Jaguar</option>
-                <option value="7">Land Rover</option>
-                <option value="8">Mercedes</option>
-                <option value="9">Mini</option>
-                <option value="10">Nissan</option>
-                <option value="11">Toyota</option>
-                <option value="12">Volvo</option>
-            </select>
-            <label>Label</label>
-
-        </div>
-        <br><br>
-        <div class="cacho">
-            <div>
-                <input type="radio" id="control_01" name="select" value="1" checked>
-                <label for="control_01">
-                    Pfft
-                </label>
-            </div>
-            <div>
-                <input type="radio" id="control_02" name="select" value="2">
-                <label for="control_02">
-                    Wannabe
-                </label>
-            </div>
-            
-        </div>
-    </section>
+    <app-comprar></app-comprar>
+    <app-footer></app-footer>
 </div>
+

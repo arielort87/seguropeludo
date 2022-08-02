@@ -17,6 +17,8 @@ import { BienvenidosComponent } from './pages/landing-page/section/bienvenidos/b
 import { PorqueComponent } from './pages/landing-page/section/porque/porque.component';
 import { ClubComponent } from './pages/landing-page/section/club/club.component';
 import { PlanesComponent } from './pages/landing-page/section/planes/planes.component';
+import { ComprarComponent } from './pages/landing-page/section/comprar/comprar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 //scroll
 
 registerLocaleData(en);
@@ -28,7 +30,9 @@ registerLocaleData(en);
     BienvenidosComponent,
     PorqueComponent,
     ClubComponent,
-    PlanesComponent
+    PlanesComponent,
+    ComprarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

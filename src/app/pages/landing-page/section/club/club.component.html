@@ -4,23 +4,23 @@
             <h1>¿Un seguro que te abre las</h1>
             <h2>puertas a un CLUB?</h2>
         </div>
-        <div nz-row class="contentImg" [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
-            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="8" nzXl="8">
-                <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginfo">
+        <div class="content-imagen">
+            <div class="imginfo">
+                <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginto">
                 <div class="textimg">
                     <p>Descuentos y</p>
                     <p>promociones</p>
                 </div>
             </div>
-            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="8" nzXl="8">
-                <img src="../../../../../assets/JPG/perro-bañera.jpg" class="imginfo">
+            <div class="imginfo">
+                <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginto">
                 <div class="textimg">
                     <p>Precios</p>
                     <p>especiales</p>
                 </div>
             </div>
-            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="8" nzXl="8">
-                <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginfo">
+            <div class="imginfo">
+                <img src="../../../../../assets/JPG/PERRO-CONO.jpg" class="imginto">
                 <div class="textimg">
                     <p>Experiencias</p>
                     <p>únicas</p>
@@ -33,8 +33,7 @@
             <P>convertir en experiencias únicas e inolvidables.</P>
         </div>
         <div class="btns-info">
-
-            <button class="btn btn-secondary conocemas">
+            <button class="btn btn-secondary conocemas" (click)="serGlobal.scroll('.comprar')" >
                 COMPRA TU SEGURO
             </button>
         </div>

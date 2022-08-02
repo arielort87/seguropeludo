@@ -1,0 +1,61 @@
+.comprar {
+    background-color: var(--color-info);
+    height: auto;
+    padding: 6vh 0;
+
+    .content-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .titulo {
+            text-align: center;
+            margin-top: 20px;
+
+            h1,
+            h2 {
+                color: var(--color-dark);
+                font-size: 25px;
+            }
+
+            h2 {
+                line-height: 1;
+            }
+        }
+
+        .formulario {
+            width: 370px;
+            margin-top: 5vh;
+
+        }
+
+        
+        .btns-info {
+            display: grid;
+            justify-content: center;
+            width: 100%;
+            margin-top: 3vh;
+
+            .conocemas {
+                font-size: 12px !important;
+                border-radius: 50px;
+                width: 280px;
+                height: 43px;
+                margin-bottom: 15px;
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .comprar {
+        .content-info {
+            .formulario {
+                width: 100%;
+                padding: 0 31px;
+                margin-top: 5vh;
+    
+            }
+        }
+    }
+}

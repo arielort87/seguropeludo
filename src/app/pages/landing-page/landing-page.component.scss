@@ -11,37 +11,55 @@
     overflow: hidden;
     z-index: 100;
 
+    .menu {
+        height: 100%;
+        padding: 5px 15px 5px 5px;
+        font-size: 25px;
+        color: var(--color-info);
+        border-right: 2px solid #B8C4C8;
+        display: none;
+    }
+
     .logo {
-        width: 350px;
+
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-grow: 4;
 
         img {
-            height: 100%;
-            transform: scale(2);
+            height: 80%;
+            // transform: scale(2);
         }
     }
 
-    .options {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        height: 100%;
+    .content-options {
         display: flex;
-        align-items: center;
-        font-size: 15px;
+        justify-content: center;
+        flex-grow: 4;
 
-        li {
-            float: left;
-            width: auto;
+        .options {
+            list-style: none;
             margin: 0;
             padding: 0;
-            color: var(--main-bg-color) !important;
-        }
-    }
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 500;
 
-    .options li+li {
-        margin-left: 50px;
+            li {
+                float: left;
+                width: auto;
+                margin: 0;
+                padding: 0;
+                color: var(--main-bg-color) !important;
+            }
+        }
+
+        .options li+li {
+            margin-left: 50px;
+        }
     }
 
 
@@ -49,7 +67,9 @@
         display: flex;
         align-items: center;
         height: 100%;
-        width: 350px;
+        flex-grow: 1;
+        justify-content: center;
+
     }
 
     .cont-buttons button+button {
@@ -71,124 +91,23 @@
         height: 100%;
     }
 
-    .comprar {
-        background-color: var(--color-info);
 
-        .floating-label {
-            position: relative;
-            height: 60px;
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
+}
 
-            .floating-input,
-            .floating-select {
-                font-size: 14px;
-                display: block;
-                padding: 17px 17px 0 17px;
-                width: 100%;
-                height: 100%;
-                background-color: #fff;
-                border: 0;
-                outline: none;
-                color: #929292;
-            }
-
-            .floating-input:focus,
-            .floating-select:focus {
-                border: 0;
-            }
-
-            label {
-                color: #929292;
-                font-size: 14px;
-                font-weight: bold;
-                position: absolute;
-                pointer-events: none;
-                left: 13px;
-                top: 20px;
-                transition: 0.3s ease all;
-                -moz-transition: 0.3s ease all;
-                -webkit-transition: 0.3s ease all;
-                -ms-transition: 0.3s ease all;
-                -o-transition: 0.3s ease all;
-            }
-
-            .floating-input:focus~label,
-            .floating-input:not(:placeholder-shown)~label {
-                top: 15%;
-                transform: translate3d(0, -15%, 0);
-                font-size: 12px;
-                color: #929292;
-                padding: 3px;
-                opacity: 1;
-                background: #fff;
-                opacity: 0.8;
-            }
-
-            .floating-select:focus~label,
-            .floating-select:not([value=""]):valid~label {
-                top: 0px;
-                font-size: 12px;
-                color: #929292;
-                padding: 3px;
-                opacity: 0.8;
-            }
+@media screen and (max-width: 900px) {
+    .header {
+        .menu {
+            display: block;
         }
 
-        .cacho {
-            display: flex;
-            flex-flow: row wrap;
-            border-radius: 10px;
-            overflow: hidden;
-
-            div {
-                flex: 1;
-                text-align: center;
-                height: 60px;
-
-                input[type="radio"] {
-                    display: none;
-
-                    &:not(:disabled)~label {
-                        cursor: pointer;
-                    }
-
-                    &:disabled~label {
-                        color: hsla(150, 5%, 75%, 1);
-                        border-color: hsla(150, 5%, 75%, 1);
-                        box-shadow: none;
-                        cursor: not-allowed;
-                    }
-                }
-
-                label {
-                    height: 100%;
-                    display: block;
-                    background: white;
-                    border: none;
-                    position: relative;
-                }
-
-                input[type="radio"]:checked+label {
-                    color: #969696;
-
-                    &::after {
-                        content: "";
-                        background: var(--color-seconday);
-                        position: absolute;
-                        bottom: 0px;
-                        left: 0px;
-                        height: 10px;
-                        width: 100%;
-                        border-radius: 10px;
-                    }
-                }
-            }
+        .content-options {
+            display: none;
         }
 
-
-
-
+        .cont-buttons {
+            #contactanos {
+                display: none;
+            }
+        }
     }
 }

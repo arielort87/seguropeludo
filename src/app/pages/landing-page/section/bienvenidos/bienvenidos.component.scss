@@ -1,45 +1,31 @@
 .bienvenida {
-    // background-image: url("../../../assets/PNG/BG_web.png");
-    // background-size: 100% 100vh;
     // background-color: var(--color-info);
-    position: relative;
-    overflow: hidden;
+    background-image: url("../../../../../assets/JPG/BG_web.jpg");
+    background-size: 100% 100vh;
+    height: auto;
+    padding: 15vh 0;
 
     .content-info {
-        position: absolute;
-        margin-top: 15vh;
-        height: 70vh;
-        width: 100%;
-        top: 0px;
-        left: 0px;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-
         .info-empresa {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
             .logoempresa {
                 width: 350px;
             }
-        }
 
-        .eslogan {
             .img-eslogan {
                 width: 350px
             }
+
+            .conocemas {
+                border-radius: 20px;
+                width: 350px;
+                height: 56px;
+                margin-bottom: 15px;
+            }
         }
-
-
-        .conocemas {
-            border-radius: 20px;
-            width: 100%;
-            height: 56px;
-        }
-    }
-
-    .img-fondo {
-        // height: 100vh;
-        width: 100%;
-        transform: scale(1.3);
-
     }
 }

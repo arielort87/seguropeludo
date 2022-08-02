@@ -1,0 +1,106 @@
+<section class="comprar">
+    <div class="content-info">
+        <img style="width: 350px;" src="../../../assets/LOGOS/logo_SEGUROPULUDO_blanco.png" alt="">
+
+        <div class="titulo">
+            <h1>¿Un seguro que te abre las</h1>
+            <h2>puertas a un CLUB?</h2>
+        </div>
+        <div nz-row class="formulario" nzGutter="8">
+            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+                <div class="floating-label">
+                    <input type="text" class="floating-input w-100" placeholder=" ">
+                    <label>Nombre del peludo</label>
+                </div>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+                <div class="tabs">
+                    <div>
+                        <input type="radio" id="perro" name="animal" value="1" checked>
+                        <label for="perro">
+                            PERRO
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gato" name="animal" value="2">
+                        <label for="gato">
+                            GATO
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+                <div class="tabs">
+                    <div>
+                        <input type="radio" id="hembra" name="sexo" value="1" checked>
+                        <label for="hembra">
+                            HEMBRA
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="macho" name="sexo" value="2">
+                        <label for="macho">
+                            MACHO
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="8" nzLg="8" nzXl="8">
+                <div class="floating-label">
+                    <input type="text" class="floating-input w-100" placeholder=" ">
+                    <label>Edad</label>
+                </div>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="16" nzLg="16" nzXl="16">
+                <div class="floating-label">
+                    <select class="floating-select w-30" style="padding-right: 15px;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <div class="flecha">
+                        <i></i>
+                    </div>
+                    <label>Años</label>
+
+                </div>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+                <div class="floating-label">
+                    <select class="floating-select w-30" style="padding-right: 15px;">
+                        <option value="1">Criollo</option>
+                        <option value="2">otra</option>
+                    </select>
+                    <div class="flecha">
+                        <i></i>
+                    </div>
+                    <label>Raza</label>
+
+                </div>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+                <div class="floating-label">
+                    <input type="text" class="floating-input w-100" placeholder=" ">
+                    <label>Correo electrónico</label>
+                </div>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" class="content-check">
+                <label nz-checkbox [(ngModel)]="checked">
+                    He leído y acepto la política de datos, así como los <b>términos y condiciones.</b>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="btns-info">
+            <button class="btn btn-secondary conocemas">
+                COMPRA TU SEGURO
+            </button>
+        </div>
+        <div class="btnnext">
+            <button class="btn btnmoverpage" (click)="serGlobal.scroll('.club')"><i nz-icon nzType="up" nzTheme="outline"></i></button>
+        </div>
+    </div>
+</section>

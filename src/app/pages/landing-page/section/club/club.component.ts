@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { GlobalServicesService } from 'src/app/Services/global-services.service';
 @Component({
   selector: 'app-club',
   templateUrl: './club.component.html',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClubComponent implements OnInit {
 
-  constructor() { }
+  constructor(private GlobalServicesService: GlobalServicesService) { }
+  serGlobal = this.GlobalServicesService
 
   ngOnInit(): void {
   }
