@@ -1,0 +1,136 @@
+.porque {
+    padding-top: 20vh;
+    background-color: var(--color-info);
+    min-height: 100vh;
+
+    .content-info {
+
+        .titulo {
+            text-align: center;
+
+            h1 {
+                color: var(--color-dark);
+                margin: 0;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 24px;
+                line-height: 1;
+            }
+        }
+
+        .content-planes {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+
+            section {
+                display: flex;
+                flex-flow: row wrap;
+                width: 757px;
+                height: 316px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border-radius: 21px;
+                padding: 30px;
+
+                div {
+                    border-radius: 6px;
+
+                    .infoplan {
+                        .tituloplan {
+                            width: 100%;
+                            height: 62px;
+                            background-color: red;
+
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                .beneficio {
+                    width: 40%;
+                }
+
+                .precio {
+                    flex: 1;
+
+                    input[type="radio"] {
+                        display: none;
+
+                        &:not(:disabled)~label {
+                            cursor: pointer;
+                        }
+
+                        &:disabled~label {
+                            color: hsla(150, 5%, 75%, 1);
+                            border-color: hsla(150, 5%, 75%, 1);
+                            box-shadow: none;
+                            cursor: not-allowed;
+                        }
+                    }
+
+                    label {
+                        height: 100%;
+                        display: block;
+                        background: white;
+                        border-radius: 9px;
+                        // border: solid 4px transparent;
+
+                        text-align: center;
+                        position: relative;
+                    }
+
+                    input[type="radio"]:checked+label {
+                        // border: solid 4px var(--color-secondary);
+                        .infoplan{
+                            border: 4px red solid;
+                        }
+                        box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px inset;
+                        &::after {
+                            content: " ";
+                            position: absolute;
+                            top: -27px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 54px;
+                            height: 27px;
+                            background: var(--color-secondary);
+                            -moz-border-radius: 100px 100px 0 0;
+                            -webkit-border-radius: 100px 100px 0 0;
+                            border-radius: 100px 100px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .text-info {
+            text-align: center;
+            height: auto;
+            font-size: 20px;
+            color: var(--color-dark);
+            margin: 60px 0px 60px;
+            text-decoration: underline;
+
+            p {
+                margin: 0;
+                line-height: normal;
+            }
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .content-planes {
+        section {
+
+            flex-direction: column !important;
+        }
+    }
+}

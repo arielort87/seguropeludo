@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 // scroll
-import { Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
-import { PageScrollService } from 'ngx-page-scroll-core';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -10,15 +7,10 @@ import { PageScrollService } from 'ngx-page-scroll-core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor(private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  scroll(id:string) {
-    this.pageScrollService.scroll({
-      document: this.document,
-      scrollTarget: id,
-    });
-  }
+  
 
 }

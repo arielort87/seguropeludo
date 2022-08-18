@@ -1,35 +1,4 @@
-<div class="header">
-    <div class="menu">
-        <i nz-icon nzType="menu" nzTheme="outline"></i>
-    </div>
-    <div class="logo" (click)="scroll('.bienvenida')">
-        <img src="../../../assets/LOGOS/logoseguromundial.png">
-    </div>
-    <div class="content-options">
-        <ul class="options">
-            <li>
-                <a (click)="scroll('.porque')">¿Por Que?</a>
-            </li>
-            <li>
-                <a (click)="scroll('.planes')">Nuestros Planes</a>
-            </li>
-            <li>
-                <a (click)="scroll('.quieresinfo')">¿Quieres más info?</a>
-            </li>
-            <li>
-                <a (click)="scroll('.club')">Club</a>
-            </li>
-            <li>
-                <a (click)="scroll('.blog')">Blog</a>
-            </li>
-        </ul>
-    </div>
-    <div class="cont-buttons">
-        <button class="btn btnin-primary" style="font-size: 12px;" id="contactanos">Contáctanos</button>
-        <button class="btn btn-secondary" style="font-size: 12px;" (click)="scroll('.comprar')">¡COMPRA TU
-            SEGURO!</button>
-    </div>
-</div>
+<app-header></app-header>
 <div class="content-section">
     <app-bienvenidos></app-bienvenidos>
     <app-porque></app-porque>
