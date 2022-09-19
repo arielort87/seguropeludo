@@ -6,40 +6,62 @@
         </div>
         <div class="content-planes">
             <section>
-                <div class="beneficio">
-                    <div class="infoplan">
-                        <div class="tituloplan">
-                            <p>
-                                Beneficios
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="precio">
-                    <input type="radio" id="control_01" name="select" value="1" checked>
-                    <label for="control_01">
+                <div class="contshaw">
+                    <div class="beneficios">
                         <div class="infoplan">
-                            <div class="tituloplan">
-                                <p>
-                                    Beneficios
-                                </p>
+                            <div class="plan">
+                                <p>Beneficios</p>
+                            </div>
+                            <div class="informacion" style="border: none;">
+                                <label style="font-size: 17px; font-weight: 400;">
+                                    <p>Valor de tu</p>
+                                    <p>Seguro Anual</p>
+                                </label>
                             </div>
                         </div>
-                    </label>
-                </div>
-                <div class="precio">
-                    <input type="radio" id="control_02" name="select" value="2">
-                    <label for="control_02">
-                        <h2>Wannabe</h2>
-                        <p>You're not a gaming God by any stretch of the imagination.</p>
-                    </label>
-                </div>
-                <div class="precio">
-                    <input type="radio" id="control_03" name="select" value="3">
-                    <label for="control_03">
-                        <h2>Daaamn</h2>
-                        <p>Now we're talking. It's gettin' a bit hairy out there in game land.</p>
-                    </label>
+                    </div>
+                    <div class="switch">
+                        <input name="switch" id="one" type="radio" checked />
+                        <label for="one" class="switch__label">
+                            <div class="infoplan">
+                                <div class="plan">
+                                    <p>Plan Plus</p>
+                                    <p>perros</p>
+                                </div>
+                                <div class="informacion">
+                                    <p>$ 259.900</p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <input name="switch" id="two" type="radio" />
+                        <label for="two" class="switch__label">
+                            <div class="infoplan">
+                                <div class="plan">
+                                    <p>Plan Plus</p>
+                                    <p>perros</p>
+                                </div>
+                                <div class="informacion">
+                                    <p>$ 259.900</p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <input name="switch" id="three" type="radio" />
+                        <label for="three" class="switch__label">
+                            <div class="infoplan">
+                                <div class="plan">
+                                    <p>Plan Plus</p>
+                                    <p>perros</p>
+                                </div>
+                                <div class="informacion">
+                                    <p>$ 259.900</p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <div class="switch__indicator"></div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -49,3 +71,12 @@
         </div>
     </div>
 </section>
+
+
+
+
+<!-- <form [formGroup]="formulario">
+    <div [class.error]="formulario.controls.user.errors?.['required'] && (user.touched || user.dirty)">
+        <input type="text" formControlName="user">
+    </div>
+</form> -->
